@@ -3,82 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mike Matei - Guided Tours & Transfers</title>
+    <title>Mike Matei - Private Driver & Tours</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             text-align: center;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
             padding: 20px;
-            background: linear-gradient(135deg, #000428, #004e92);
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
         }
-        .card {
-            background: rgba(255, 255, 255, 0.2);
-            padding: 35px;
-            border-radius: 20px;
-            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
-            max-width: 450px;
-            width: 90%;
-            backdrop-filter: blur(12px);
-            transition: transform 0.3s ease;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-        }
-        h1 {
-            color: #ffffff;
-            font-size: 30px;
-            margin-bottom: 10px;
-            letter-spacing: 1px;
-        }
-        h3 {
-            color: #e0e0e0;
-            margin-bottom: 25px;
-            font-weight: 300;
-        }
-        .contact-button {
-            display: block;
-            width: 100%;
-            padding: 14px;
-            margin: 12px 0;
-            text-decoration: none;
-            background: linear-gradient(90deg, #00c6ff, #0072ff);
-            color: white;
-            font-weight: bold;
-            border-radius: 30px;
-            transition: all 0.3s ease;
-            font-size: 16px;
-            border: none;
-            cursor: pointer;
+        .container {
+            max-width: 400px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
         }
-        .contact-button:hover {
-            background: linear-gradient(90deg, #0072ff, #00c6ff);
-            transform: scale(1.07);
+        h1 {
+            margin-bottom: 10px;
         }
-        img {
-            max-width: 190px;
-            margin: 25px 0;
-            border-radius: 12px;
-            box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.3);
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .link {
+            display: block;
+            background: white;
+            color: #1e3c72;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+        .link:hover {
+            background: #e0e0e0;
+            transform: scale(1.05);
+        }
+        .qr-code {
+            margin-top: 15px;
+        }
+        .qr-code img {
+            width: 150px;
+            height: 150px;
         }
     </style>
 </head>
 <body>
-    <div class="card">
+    <div class="container">
         <h1>Mike Matei</h1>
-        <h3>Guided Tours | Transfers | Any Info</h3>
-        <p>📞 <a href="tel:+33625568707" class="contact-button">Call Me</a></p>
-        <p>📧 <a href="mailto:mateifr@gmail.com" class="contact-button">Email Me</a></p>
-        <p>💬 <a href="https://wa.me/33625568707" class="contact-button">WhatsApp</a></p>
-        <p>📩 <a href="https://t.me/Ro_Mike" class="contact-button">Telegram</a></p>
-        <p>📌 Scan the QR code below to save my contact:</p>
-        <img src="https://raw.githubusercontent.com/RoMike28/Digital-business-card/main/Mike_Matei_Business_Card_QR.png" alt="QR Code">
+        <h3>Private Driver & Tours</h3>
+        <img class="profile-img" src="https://your-image-link.com" alt="Profile Picture">
+        <a href="tel:+33625568707" class="link">📞 Call Me</a>
+        <a href="mailto:mateifr@gmail.com" class="link">📧 Email Me</a>
+        <a href="https://wa.me/33625568707" class="link">💬 WhatsApp</a>
+        <a href="https://t.me/Ro_Mike" class="link">📩 Telegram</a>
+        <div class="qr-code">
+            <p>📌 Scan to save my contact:</p>
+            <img src="https://yourgithubusername.github.io/digital-business-card/Mike_Matei_QR.png" alt="QR Code">
+        </div>
     </div>
 </body>
 </html>
